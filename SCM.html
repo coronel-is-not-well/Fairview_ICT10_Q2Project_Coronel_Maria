@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
-    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script><title>ICT 10</title>
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script><title>Project</title>
  
 <style>
 
 body{margin: 20px;
     align-items: center;
     background: radial-gradient(circle, #181d4b, #b794d4);
-    font-family: Georgia;
-    }
+    font-family: Georgia;}
 
 #ShowcaseBar{margin: 10px auto;
             background-color: rgba(165, 165, 165, 0.7);
@@ -29,14 +28,23 @@ a{color: white;
         text-decoration: none;
         font-family: Georgia;}
 
+#addn{background-color: rgba(0, 0, 0, 0.700);
+    color: white;
+    padding: 20px;
+    width: 33%;
+    text-align: justify;
+    align-self: center;
+    margin: 0 auto;}
+
 </style>
 
 </head>
+
 <body>
 
-   <h1 style="color: white; font-family: Georgia; text-shadow: 0 0 7px white; text-align: center;">Student Showcase 2026</h1>
+<h1 style="color: white; font-family: Georgia; text-shadow: 0 0 7px white; text-align: center;">Student Showcase 2026</h1>
 
-    <div id="ShowcaseBar">
+<div id="ShowcaseBar">
 
     <a href="index.html">Club Member Checker</a>
 
@@ -46,27 +54,35 @@ a{color: white;
         
     <a href="MTC.html" style="flex: none;">Meet the Creator</a>
    
-    </div>
+</div>
 
-    <br><br>
+<br><br>
+
+<div id="addn">
 
     <h1>Add New Club Member</h1>
 
     <label for="firstname">First Name:</label><br>
-    <input type="text" id="firstname"><br><br>
+    <input type="text" id="firstname" style="width: 100%; font-family: Georgia;"><br><br>
 
     <label for="lastname">Last Name:</label><br>
-    <input type="text" id="lastname"><br><br>
+    <input type="text" id="lastname" style="width: 100%; font-family: Georgia;"><br><br>
 
-    <button py-click="Submit">Submit</button>
+    <button py-click="Submit" style="width: 100%; font-family: Georgia; border: 10px white; background-color: white; color: black; font-family: Georgia;">Submit</button>
 
+    <br><br><hr><br>
 
-    <h6>All members: </h6><br>
+    <p>All members: </p><br>
+
     <div id="output1"></div><br><br>
 
-    <h6>Number of members:</h6><div id="output2"></div>
+    <p>Number of members:</p><div id="output2"></div>
 
+    </div>
+
+<p style="text-align: center; color: white; font-family: Georgia;"> @2026 Maria Alexandria Coronel | 10 - Ruby </p>
     
-    <script type="py" src="main.py"></script>
+<script type="py" src="main.py"></script>
+
 </body>
 </html>
