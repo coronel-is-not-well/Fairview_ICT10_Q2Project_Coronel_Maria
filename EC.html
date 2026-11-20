@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+<style>
+
+body{margin: 20px;
+    
+    background: radial-gradient(circle, #181d4b, #b794d4);
+    font-family: Georgia;
+    }
+
+
+.container{background-color: rgba(0, 0, 0, 0.500);
+            color: white;
+            margin: 20px;
+            padding: 20px;
+            width: 33%;
+            height: auto;
+            align-self: center;
+            margin: 0 auto;}
+
+#ShowcaseBar{margin: 10px auto;
+            background-color: rgba(165, 165, 165, 0.7);
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            display: flex;
+            width: 75%;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;}
+
+a{color: white;
+        text-decoration: none;
+        font-family: Georgia;}
+
+</style>
+
+</head>
+<body>
+
+  <h1 style="color: white; font-family: Georgia; text-shadow: 0 0 7px white; text-align: center;">Student Showcase 2026</h1>
+
+    <div id="ShowcaseBar">
+
+    <a href="index.html">Club Member Checker</a>
+
+    <a href="EC.html">Element Checker</a>
+
+    <a href="SCM.html">School Club Members</a>
+        
+    <a href="MTC.html" style="flex: none;">Meet the Creator</a>
+   
+    </div>
+
+    <br><br>
+
+<div class="container">
+
+        <h1 style="text-align: center;">Non-Metal Elements</h1>
+        <p style="text-align: justify;">Enter the symbol of a non-metal element (H, He, C).</p>
+        <br>
+
+        <label for="ElementInput">Element Symbol</label><br>
+        <input type="text" id="ElementInput" placeholder="H" style="width: 50%;">
+        <br><br>
+
+        <button py-click="SearchSymbol" style="width: 100%; border: 10px white; background-color: white; color: black; font-family: Georgia;">Search</button>
+
+        <br><br>
+        <hr>
+        
+
+        <div class="result">
+
+            <h3 style="text-align: center;">Result</h3>
+
+            <p>Element Symbol: <span id = "Symbol"> </span> </p>
+            <p>Element Name: <span id = "EName"> </span> </p>
+            <p>Atomic Number: <span id = "AtomicNo"> </span> </p>
+            <p>Atomic Mass: <span id = "AtomicMass"> </span> </p>
+
+        </div>
+
+</div>
+
+<p style="text-align: center; color: white; font-family: Georgia;">@2026 Maria Alexandria Coronel | 10 - Ruby </p>
+
+<script type="py" src="main.py"></script>
+
+</body>
+</html>

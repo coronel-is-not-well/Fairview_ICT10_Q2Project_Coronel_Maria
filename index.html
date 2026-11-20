@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+<style>
+
+body{margin: 20px;
+    text-align: center;
+    background: radial-gradient(circle, #181d4b, #b794d4);
+    font-family: Georgia;
+    }
+
+#Part1{background-color: rgba(0, 0, 0, 0.700);
+    color: white;
+    padding: 20px;
+    width: 33%;
+    text-align: justify;
+    align-self: center;
+    margin: 0 auto;}
+
+#Part2{background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    width: 33%;
+    text-align: justify;
+    align-self: center;
+    margin: 0 auto;}
+
+
+#ShowcaseBar{margin: 10px auto;
+            background-color: rgba(165, 165, 165, 0.7);
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            display: flex;
+            width: 75%;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;}
+
+a{color: white;
+        text-decoration: none;
+        font-family: Georgia;}
+
+
+</style>
+
+</head>
+<body>
+
+    <h1 style="color: white; font-family: Georgia; text-shadow: 0 0 7px white;">Student Showcase 2026</h1>
+
+    <div id="ShowcaseBar">
+
+    <a href="index.html">Club Member Checker</a>
+
+    <a href="EC.html">Element Checker</a>
+
+    <a href="SCM.html">School Club Members</a>
+        
+    <a href="MTC.html" style="flex: none;">Meet the Creator</a>
+
+
+   
+    </div>
+
+    <br><br>
+
+    <h1 style="color: rgb(255, 255, 255);">Maria Mouse Clubhouse</h1>
+
+    <h4 style="color: white;"><i>Club member checker</i></h4>
+
+    <div id="Part1">
+
+   
+    
+    <label for="FName">First Name</label><br>
+    <input type="text" id="FName" style="width: 100%;"><br><br>
+
+
+    <label for="LName">Last Name</label><br>
+    <input type="text" id="LName" style="width: 100%;"><br><br>
+
+    <button py-click="Submit1" style="width: 100%; background-color: white; border: 2px solid rgb(255, 255, 255); font-family: Georgia;">Submit</button>
+
+    </div>
+
+    <hr style="width: 36%;">
+
+    <div id="Part2">
+
+    <div id="CMC"></div>
+    <script type="py" src="main.py"></script>
+
+    </div>
+
+    <p style="text-align: center; color: white; font-family: Georgia;">@2026 Maria Alexandria Coronel | 10 - Ruby </p>
+    
+    
+    
+</body>
+</html>
