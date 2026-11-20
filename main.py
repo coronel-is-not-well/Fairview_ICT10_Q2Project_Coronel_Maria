@@ -1,5 +1,7 @@
 from pyscript import document, display
 
+#Club Member Checker
+
 Members = ["Sabine Shark", "Dylan Dove", "Tanya Tiger", "Ramone Ram", "Kirsten Kangaroo", "Atrisha Alpaca", "Lance Lion", "Sean Seal", "Diego Dog", "Maria Mouse", "Edrian Elephant", "Eliana Eagle", "Raven Raven", "Annika Ant", "Amanda Axolotl", "Sunny Sheep", "Rodolfo Rat", "Maiselle Macaw", "Matt Monkey", "Andre Armadillo", "Anissa Albatross", "Frances Fox", "Ynigo Yak", "Zack Zebra", "Rohan Rabbit", "Jhoana Jaguar"] # names of 10 Ruby <3
 
 def Submit1(e):
@@ -12,27 +14,11 @@ def Submit1(e):
 
     Message = f"Congratulations {members_new}! You are part of the Maria Mouse Clubhouse." if members_new in Members else f"Sorry {members_new}, your name is not on the list." # checking if the members new is in the list of members
 
-    display(Message, target="CMC") # making it seen
+    display(Message, target="CMC") # displaying to index
 
-Grade7 = {"Raven Denum", "Sabine Agacita"}
+# --------------------------------------------
 
-Grade8 = {"Frances Sevilla", "Kirsten Caagbay"}
-
-Grade9 = {"Rodolfo Lao", "Lance Catu"}
-
-Grade10 = {"Maria Coronel"} # listing members
-
-GradesAll = Grade7 | Grade8 | Grade9 | Grade10 # putting them together
-
-def Submit(e):
-
-    NewName = document.getElementById("firstname").value.capitalize() + " " + document.getElementById("lastname").value.capitalize() # getting the input value
-
-    Final = GradesAll | {NewName} # all together
-
-    display(Final, target="output1")
-
-    display(len(Final), target="output2")
+# Element Checker
 
 NonMetals = {"H":("Hydrogen", 1, 1.008), 
              "He":("Helium", 2, 4.0026),
@@ -63,5 +49,27 @@ def SearchSymbol(e): #function
     document.getElementById("AtomicNo").innerText = result[1]
     document.getElementById("AtomicMass").innerText = result[2] # getting the values then making it appear on the main page
 
+# --------------------------------------------
 
+# School Club Members
 
+Grade7 = {"Raven Denum", "Sabine Agacita"}
+
+Grade8 = {"Frances Sevilla", "Kirsten Caagbay"}
+
+Grade9 = {"Rodolfo Lao", "Lance Catu"}
+
+Grade10 = {"Maria Coronel"} # listing members
+
+GradesAll = Grade7 | Grade8 | Grade9 | Grade10 # combining them together 
+
+def Submit(e):
+
+    NewName = document.getElementById("firstname").value.capitalize() + " " + document.getElementById("lastname").value.capitalize() # getting the input values 
+
+    Final = GradesAll | {NewName} # input value combines with the list
+
+    list = "<br>".join(sorted(Final)) # sorted and spaced version 
+
+    document.getElementById("output1").innerHTML = f"{list}" # displaying to the page
+    document.getElementById("output2").innerHTML = f"{len(Final)}" # displaying to the page (length)
